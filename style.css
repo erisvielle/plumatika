@@ -1,0 +1,502 @@
+@font-face {
+  font-family: 'Merriweather-Regular';
+  src: url('font/Merriweather-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Outfit-Regular';
+  src: url('font/Outfit-Regular.ttf') format('truetype');
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Outfit-Regular', sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #CA5216;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  font-size: 0.85rem;
+  display: flex;
+  box-sizing: border-box;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.pluma {
+  display: flex;  
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.button-gs {
+  background-color: #CB5217;
+  border-radius: 30px;
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button-gs:hover {
+  background-color: #FF6C32;
+}
+
+.menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: filter 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+/* no to purple!!!!! */
+.menu-text {
+  font-size: 1.25rem;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.menu:hover {
+  filter: brightness(1.5);
+}
+
+.admincon {
+  font-size: 1rem ;
+  color: #CA5216;
+  vertical-align: middle;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 4.5rem;
+  right: 2rem;
+  background: #ffffff;
+  border: #FFBE5C 2px solid;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 0.5rem 1rem;
+  transition: filter 0.3s;
+}
+
+.dropdown.show {
+  display: block;
+}
+
+.dropdown a {
+  font-size: 1rem;
+  color: #CA5216;
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.dropdown a:hover {
+  color: #FF6C32;
+}
+
+/* phone/tab sizes menu */
+.mobile-menu {
+  display: none;
+  padding: 1rem;
+}
+
+.mobile-menu a {
+  color: #FF6C32;
+  text-decoration: none;
+  font-size: 1rem;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.mobile-menu a:visited {
+  color: #FF6C32;
+  text-decoration: none;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+}
+
+footer {
+  font-family: 'Merriweather-Regular', serif;
+  font-weight: bold;
+  text-align: center;
+  background-color: #FFBE5C;
+  color: #CB5217;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+/* the scroll magic */
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem;
+}
+
+.east-side,
+.west-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+}
+
+.east-side { background-color: #fff7f0; }
+.west-side { background-color: #f0f7ff; }
+
+.west-side .nothingburger { order: 1; }
+.west-side .imgur { order: 2; }
+
+.nothingburger h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #CB5217;
+}
+
+.nothingburger p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Image / Lottie container */
+.imgur {
+  width: 100%;
+  max-width: 512px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+}
+
+.imgur img, .imgur svg {
+  width: 100% !important;
+  height: 100% !important;
+  transition: transform 0.3s ease;
+}
+
+.imgur img:hover, .imgur svg:hover {
+  transform: scale(1.05);
+}
+
+.flashcard {
+  width: 100%;
+  max-width: 512px;
+  aspect-ratio: 1 / 1;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+
+.flashcard-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.flashcard-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.flashcard-front,
+.flashcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+}
+
+.flashcard-front img,
+.flashcard-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.flashcard-back {
+  transform: rotateY(180deg);
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 6rem 1rem 0 1rem;
+}
+
+.faq-item {
+  border-bottom: 2px solid #FFBE5C;
+  margin-bottom: 1rem;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+  padding: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #CB5217;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #fff3e0;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.1s ease, padding 0.3s ease;
+  padding: 0 1rem;
+}
+
+.faq-answer.open {
+  max-height: 500px;
+  padding: 1rem;
+}
+
+.login-container {
+  width: 90%;
+  max-width: 400px;       /* caps the width */
+  margin: 8rem auto;      /* centers vertically and horizontally */
+  padding: 2rem;
+  background-color: #fff7f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  font-family: 'Outfit-Regular', sans-serif;
+  box-sizing: border-box;
+}
+
+.login-container h1 {
+  color: #CB5217;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #CA5216;
+  text-align: left;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #FFBE5C;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #CB5217;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1rem;
+}
+
+.login-container button:hover {
+  background-color: #FF6C32;
+}
+
+.login-error {
+  color: red;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* scroll animation */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-links {
+    gap: 0.5rem;
+  }
+
+  .button-gs {
+    padding: 0.5rem 0.9rem;
+    font-size: 1rem;
+  }
+
+  .menu-text {
+    font-size: 1.25rem;  
+  }
+
+  .menu img,
+  .admincon {
+    font-size: 1.25rem;  
+  }
+
+  .dropdown {
+    display: none !important;
+  }
+
+  .mobile-menu {
+    font-size: 1.25rem;  
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50vw;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -4px 0 8px rgba(0,0,0,0.2);
+    padding: 1rem 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    transition: right 0.3s ease;
+    z-index: 2000;
+  }
+
+  .mobile-menu.open {
+    right: 0;
+  }
+
+  .mobile-menu a {
+    color: #CA5216;
+    text-decoration: none;
+    font-size: 1.25rem;  
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    display: block;
+  }
+
+  .mobile-menu a:visited {
+    color: #CA5216;
+    text-decoration: none;
+  }
+
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    align-self: flex-end;
+    cursor: pointer;
+    color: #CA5216;
+  }
+
+  .east-side,
+  .west-side {
+    grid-template-columns: 1fr; /* stack image + text */
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .nothingburger {
+    width: 100%;
+  }
+
+  .imgur {
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .pluma h1 {
+    display: none;
+  }
+
+  .button-gs {
+    padding: 0.5rem 0.9rem;
+    font-size: 1rem;
+  }
+
+  .menu img {
+    height: 15px;
+  }
+
+  .menu-text {
+    font-size: 1.25rem;  
+  }
+
+  .dropdown {
+    top: 3.5rem;
+    right: 0.5rem;
+    width: 130px;
+    font-size: 1.25rem;  
+  }
+
+  .login-container {
+    padding: 1.5rem;
+  }
+
+  .login-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+

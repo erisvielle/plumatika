@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumatika</title>
+    <link rel="icon" href="icon/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="pluma">
+      <a href="index.html" class="navbar-logo">
+        <img src="icon/icon.png" alt="logo" style="height:50px;">
+      </a>
+      <h1>Plumatika</h1>
+    </div>
+    <div class="nav-links">
+      <a href="faq.html" class="button-gs">Get Started</a>
+      <button class="menu" onclick="toggleMenu()">
+        <img src="icon/menu.png" alt="menu" style="height:30px;">
+      </button>
+    </div>
+    <div class="dropdown" id="navmenu">
+      <a href="dashboard.html"><ion-icon name="log-in" class="admincon"></ion-icon><span> Dashboard</span></a>
+    </div>
+    <div class="mobile-menu" id="sidemenu">
+      <button class="close-btn" onclick="toggleMenu()"><ion-icon name="arrow-forward-outline"></ion-icon></button>
+      <a href="dashboard.html"><ion-icon name="log-in" class="admincon"></ion-icon> Dashboard</a>
+    </div>
+  </nav>
+
+  <section class="banner">
+    <img src="icon/banner.png" alt="banner" class="banner-img">
+  </section>
+
+  <section class="features">
+  <div class="east-side animate-on-scroll">
+    <div class="imgur" id="writing-lottie"></div>
+    <div class="nothingburger">
+      <h1>Baybayin-centered Learning Application</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Suspendisse euismod, nisi vel consectetur interdum, nisl nisi 
+        aliquet nunc, sed commodo sapien eros ac justo.
+      </p>
+    </div>
+  </div>
+
+  <div class="west-side animate-on-scroll">
+    <div class="nothingburger">
+      <h1>Gamified Features</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Suspendisse euismod, nisi vel consectetur interdum, nisl nisi 
+        aliquet nunc, sed commodo sapien eros ac justo.
+      </p>
+    </div>
+    <div class="imgur" id="achieve-lottie"></div>
+  </div>
+
+  <div class="east-side animate-on-scroll">
+  <div class="flashcard animate-on-scroll">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <img src="icon/p-flash.png" alt="Front of card" />
+      </div>
+      <div class="flashcard-back">
+        <img src="icon/p-flash-eng.png" alt="Back of card" />
+      </div>
+    </div>
+  </div>
+    <div class="nothingburger">
+      <h1>Offline Flashcards</h1>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Suspendisse euismod, nisi vel consectetur interdum, nisl nisi 
+        aliquet nunc, sed commodo sapien eros ac justo.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Plumatika. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
