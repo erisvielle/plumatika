@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumatika</title>
+    <link rel="icon" href="icon/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="pluma">
+      <a href="/" class="navbar-logo">
+        <img src="icon/icon.png" alt="logo" style="height:50px;">
+      </a>
+      <h1>Plumatika</h1>
+    </div>
+    <div class="nav-links">
+      <a href="download/index.html" class="button-gs">Download</a>
+      <a href="faq/index.html" class="button-gs">FAQs</a>
+      <a href="raffle/index.html" class="button-gs">Join Raffle</a>
+      <button class="menu" onclick="toggleMenu()">
+        <img src="icon/menu.png" alt="menu" style="height:30px;">
+      </button>
+    </div>
+    <div class="dropdown" id="navmenu">
+      <a href="dashboard/index.html"><ion-icon name="log-in" class="admincon"></ion-icon><span> Dashboard</span></a>
+    </div>
+    <div class="mobile-menu" id="sidemenu">
+      <button class="close-btn" onclick="toggleMenu()"><ion-icon name="arrow-forward-outline"></ion-icon></button>
+      <a href="download/index.html"><ion-icon name="download-outline" class="downloadcon"></ion-icon> Download App</a>
+      <a href="faq/index.html"><ion-icon name="help-circle-outline" class="faqcon"></ion-icon> FAQs</a>
+      <a href="raffle/index.html"><ion-icon name="dice-outline" class="rafflecon"></ion-icon> Join Raffle</a>
+      <a href="dashboard/index.html"><ion-icon name="log-in" class="admincon"></ion-icon> Dashboard</a>
+    </div>
+  </nav>
+
+  <section class="banner">
+  <picture>
+    <source media="(max-width: 768px)" srcset="icon/banner-download-mobile.png">
+    <img src="icon/banner-download.png" alt="raffle" class="banner">
+  </picture>
+  </section>
+
+  <section class="features">
+  <div class="east-side animate-on-scroll">
+    <img src="icon/logo.png" alt="logo" class="feature-gif">
+    <div class="nothingburger">
+      <h1>Write the past, shape the future.<br>
+        Scribble your way to ace Baybayin!</h1><br>
+      <button class="download-btn" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1rE-Ci0sPJ1zUfR1OcekL-CLmz6_xed-c'">Download the Plumatika App</button>
+    </div>
+  </div>
+  </section>
+
+  <h1 style="text-align: center; justify-content: center; padding: 1rem; margin: 0, auto;">Demo Video</h1>
+
+  <section class="demo-video">
+  <div class="video-wrapper">
+    <iframe src="https://drive.google.com/file/d/1vF1mSm2p2hp1jGSHLbJjBXypKW2fhlWI/preview" allow="fullscreen" frameborder="0"></iframe>
+  </div>
+  </section>
+
+  <h1 style="text-align: center; justify-content: center; padding: 1rem; margin: 0, auto;">Release Notes</h1>
+
+  <section class="faq-container">
+    <div class="faq-item">
+      <button class="faq-question">Plumatika 0.1.0 (Beta Launch)</button>
+      <div class="faq-answer">
+        <h3>Release Date</h3>
+        <p>September 14, 2025</p>
+        <h3>Introduction to Plumatika</h3>
+        <p>Plumatika is an AI-powered Baybayin learning app designed to help you learn Baybayin through structured lessons, guided handwriting practice, interactive quizzes, and mini games. Progress through chapters, complete quizzes, and earn achievements. Plumatika makes Baybayin learning engaging through repetition, instant feedback, and gamification. Create your account, verify your email, and start your journey to mastering Baybayin!</p>
+        <h3>Key Features:</h3>
+        <ul>
+            <li><b>Structured Lessons & Quizzes: </b> Handwriting exercises and multiple-choice questions guide your learning.</li>
+            <li><b>Guided Handwriting Practice: </b>Write each character stroke by stroke and get instant feedback. Practice as many times as you want.</li>
+            <li><b>Mini Games: </b>Typing Challenge and Offline Flashcards to make learning fun.</li>
+            <li><b>Dashboard & Leaderboards: </b>Track your progress and see how you rank among other learners.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Plumatika 0.2.0</button>
+      <div class="faq-answer">
+        <h3>Release Date</h3>
+        <p>September 24, 2025</p>
+        <h3>New Updates</h3>
+        <p>This update improves usability, strengthens data transparency, and fixes minor bugs for a smoother learning experience.</p>
+        <ul>
+            <li><b>Menu Drawer Update: </b> Added extra spacing and refreshed color for a cleaner look and easier navigation.</li>
+            <li><b>Sign-Up Enhancements: </b>
+                <ul>
+                    <li>Show/hide password option for easier login.</li>
+                    <li>Data privacy notice added before account creation.</li>
+                </ul>
+            </li>
+            <li><b>Lesson Guide Update: </b>The guide for YA has been revised for clarity.</li>
+        </ul>
+        <h3>Bug Fixes:</h3>
+        <ul>
+            <li>Fixed an issue where GIF guides did not appear in the beta version.</li>
+            <li>Fixed a redirect issue in Lesson 7 Study Session when clicking “Continue.”</li>
+        </ul>
+      </div>
+    </div>
+   </section>
+
+   <br><br>
+  <footer>
+    <p>&copy; 2025 Plumatika. All rights reserved.</p>
+  </footer>
+
+  <!-- imported icons and lottie -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
