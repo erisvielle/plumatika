@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumatika</title>
+    <link rel="icon" href="icon/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="pluma">
+      <a href="/" class="navbar-logo">
+        <img src="icon/icon.png" alt="logo" style="height:50px;">
+      </a>
+      <h1>Plumatika</h1>
+    </div>
+    <div class="nav-links">
+      <a href="download.html" class="button-gs">Download</a>
+      <a href="faq.html" class="button-gs">FAQs</a>
+      <a href="raffle.html" class="button-gs">Join Raffle</a>
+      <button class="menu" onclick="toggleMenu()">
+        <img src="icon/menu.png" alt="menu" style="height:30px;">
+      </button>
+    </div>
+    <div class="dropdown" id="navmenu">
+      <a href="dashboard.html"><ion-icon name="log-in" class="admincon"></ion-icon><span> Dashboard</span></a>
+    </div>
+    <div class="mobile-menu" id="sidemenu">
+      <button class="close-btn" onclick="toggleMenu()"><ion-icon name="arrow-forward-outline"></ion-icon></button>
+      <a href="download.html"><ion-icon name="download-outline" class="downloadcon"></ion-icon> Download App</a>
+      <a href="faq.html"><ion-icon name="help-circle-outline" class="faqcon"></ion-icon> FAQs</a>
+      <a href="raffle.html"><ion-icon name="dice-outline" class="rafflecon"></ion-icon> Join Raffle</a>
+      <a href="dashboard.html"><ion-icon name="log-in" class="admincon"></ion-icon> Dashboard</a>
+    </div>
+  </nav>
+
+
+  <section class="banner">
+  <picture>
+    <source media="(max-width: 768px)" srcset="icon/banner2-mobile-notxt.png">
+    <img src="icon/banner2-notxt.png" alt="raffle" class="banner">
+  </picture>
+  </section>
+
+  <h1 style="text-align: center; justify-content: center; padding: 1rem; margin: 0, auto;">Plumatika Raffle: Frequently Asked Questions</h1>
+
+  <section class="faq-container">
+    <div class="faq-item">
+      <button class="faq-question">Who can join the raffle?</button>
+      <div class="faq-answer">
+        <p>Any registered user who completes the requirements below can be eligible to join.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What are the raffle requirements?</button>
+      <div class="faq-answer">
+        <p>To qualify for the raffle, participants must:</p>
+        <ol>Earn the Supernova achievement by completing all lessons in Chapter 1.</ol>
+        <ol>Complete the survey available on the homepage (it may also pop up occasionally).</ol>
+        <p>The participant must complete both requirements. If you only complete one, you won’t be eligible for the prize.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How will users be chosen?</button>
+      <div class="faq-answer">
+        <p>Winners are selected randomly from all participants who meet the requirements. A total of 5 winners will be picked.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I participate if I only meet one of the requirements?</button>
+      <div class="faq-answer">
+        <p>No. Both requirements, Supernova achievement and survey completion, are mandatory to be eligible for the raffle.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How will winners be notified?</button>
+      <div class="faq-answer">
+        <p>Winners will be contacted via the email registered in our database. Make sure your email is valid and active.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What is the prize?</button>
+      <div class="faq-answer">
+        <p>Each winner will receive a total of PHP 100.00, which will be sent via GCash.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">When will the raffle take place?</button>
+      <div class="faq-answer">
+        <p>The raffle will be conducted after all participants have completed the requirements. Winners will be notified shortly after the draw.</p>
+      </div>
+    </div>
+  </section>
+
+  <br><br>
+  <footer>
+    <p>&copy; 2025 Plumatika. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
