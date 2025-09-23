@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Plumatika</title>
+  <link rel="icon" href="icon/icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="pluma">
+      <a href="index.html" class="navbar-logo">
+        <img src="icon/icon.png" alt="logo" style="height:50px;">
+      </a>
+      <h1>Plumatika</h1>
+    </div>
+    <div class="nav-links">
+      <a href="download.html" class="button-gs">Download</a>
+      <a href="faq.html" class="button-gs">FAQs</a>
+      <a href="raffle.html" class="button-gs">Join Raffle</a>
+      <button class="menu" onclick="toggleMenu()">
+        <img src="icon/menu.png" alt="menu" style="height:30px;">
+      </button>
+    </div>
+    <div class="dropdown" id="navmenu">
+      <a href="dashboard.html"><ion-icon name="log-in" class="admincon"></ion-icon><span> Dashboard</span></a>
+    </div>
+    <div class="mobile-menu" id="sidemenu">
+      <button class="close-btn" onclick="toggleMenu()"><ion-icon name="arrow-forward-outline"></ion-icon></button>
+      <a href="download.html"><ion-icon name="download-outline" class="downloadcon"></ion-icon> Download App</a>
+      <a href="faq.html"><ion-icon name="help-circle-outline" class="faqcon"></ion-icon> FAQs</a>
+      <a href="raffle.html"><ion-icon name="dice-outline" class="rafflecon"></ion-icon> Join Raffle</a>
+      <a href="dashboard.html"><ion-icon name="log-in" class="admincon"></ion-icon> Dashboard</a>
+    </div>
+  </nav>
+
+  <br><br><br><br><br><br>
+  <h1 style="text-align: center; justify-content: center; padding: 1rem; margin: 0;">Frequently Asked Questions</h1>
+
+  <section class="faq-container">
+    <div class="faq-item"><h1 style="text-align: left; justify-content: center; padding: 1rem; margin: 0;">Installation</h1>
+      <button class="faq-question">How do I download Plumatika?</button>
+      <div class="faq-answer">
+        <p>Download the .apk file from the Plumatika official website and install it on your Android device.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">My device blocks apps not from Google Play Store. What should I do?</button>
+      <div class="faq-answer">
+        <p>On Android, go to <b>Settings > Security > Install unknown apps (or similar depending on your device)</b> and allow your browser or file manager to install apps from unknown sources.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What devices are supported?</button>
+      <div class="faq-answer">
+        <p>Plumatika supports <b>most modern Android devices.</b> Make sure your device is reasonably up to date to ensure smooth performance.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How much storage space does the app require?</button>
+      <div class="faq-answer">
+        <p>Plumatika requires approximately <b>130 MB</b> of free storage for installation, plus additional space for your progress and data.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do I need internet to install the app?</button>
+      <div class="faq-answer">
+        <p><b>Yes,</b> an internet connection is required to download the .apk file.</p>
+      </div>
+    </div>
+
+    <br>
+    <h1 style="text-align: left; justify-content: center; padding: 1rem; margin: 0;">Account Setup and Management</h1>
+    <div class="faq-item">
+      <button class="faq-question">How do I create an account?</button>
+      <div class="faq-answer">
+        <p>Open the app, click <b>Sign Up</b>, enter your email and password, and follow the prompts to create your account. If account is existing, press <b>Login</b>.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How do I verify my email?</button>
+      <div class="faq-answer">
+        <p>You will receive a verification code via email submitted. Enter it in the app to complete verification.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I sign up using social accounts?</button>
+      <div class="faq-answer">
+        <p>Not in this version. <b>Only email and password are supported for account creation.</b></p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How do I reset or change my password?</button>
+      <div class="faq-answer">
+        <p>On the login screen, tap <b>Forgot Password</b> and follow the instructions.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How do I update my profile information?</button>
+      <div class="faq-answer">
+        <p>Open the <b>Dashboard</b>, tap your profile, and edit your information.</p>
+      </div>
+    </div>
+
+    <br>
+    <h1 style="text-align: left; justify-content: center; padding: 1rem; margin: 0;">App Navigation and Usage</h1>
+    <div class="faq-item">
+      <button class="faq-question">How do I switch languages?</button>
+      <div class="faq-answer">
+        <p>Open the <b>menu drawer on the top left of the screen</b> and toggle between English and Filipino.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How do I sign out of the app?</button>
+      <div class="faq-answer">
+        <p>Open the <b>menu drawer on the top left of the screen</b> and tap <b>Sign Out.</b></p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I use Plumatika offline?</button>
+      <div class="faq-answer">
+        <p>To access the full app, an internet connection is required. <b>Offline Flashcards</b> is the only feature that can be accessed without internet connection.</p>
+      </div>
+    </div>
+
+    <br>
+    <h1 style="text-align: left; justify-content: center; padding: 1rem; margin: 0;">Troubleshooting and Support</h1>
+    <div class="faq-item">
+      <button class="faq-question">What should I do if the app crashes or freezes?</button>
+      <div class="faq-answer">
+        <p>Restart the app. If the problem persists, try clearing the app cache in your device settings or reinstalling the .apk file.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How do I report bugs or issues?</button>
+      <div class="faq-answer">
+        <p>Use the <b>Help Guide</b> in the app or contact support via email. Include details about your device and the issue. You can also share your experience through the <b>feedback survey</b> located at the top right of the app header. <b>Do note that this survey can only be taken once in this version.</b></p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Who do I contact for technical support?</button>
+      <div class="faq-answer">
+        <p>Email the support team at <b>plumatika.ming@gmail.com.</b></p>
+      </div>
+    </div>
+
+    <br>
+    <h1 style="text-align: left; justify-content: center; padding: 1rem; margin: 0;">Privacy and Data</h1>
+    <div class="faq-item">
+      <button class="faq-question">How is my personal information protected?</button>
+      <div class="faq-answer">
+        <p>Plumatika encrypts sensitive information and follows standard data privacy practices.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What data does Plumatika collect?</button>
+      <div class="faq-answer">
+        <p>Plumatika collects basic account information, <b>quiz answers and results, and feedback</b> to improve the app and for research purposes.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How can I delete my account and data?</button>
+      <div class="faq-answer">
+        <p>Contact support via email <b>(plumatika.ming@gmail.com)</b> to request deletion of your account and all associated data.</p>
+      </div>
+    </div>
+
+    <br>
+    <h1 style="text-align: left; justify-content: center; padding: 1rem; margin: 0;">Updates and Feedback</h1>
+    <div class="faq-item">
+      <button class="faq-question">How do I update the app to the latest version?</button>
+      <div class="faq-answer">
+        <p>First, <b>delete the old .apk version</b> from your device to avoid installation errors. <b>Download the newest .apk</b> from the official website and install it.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How can I give feedback or suggest new features?</button>
+      <div class="faq-answer">
+        <p>You can give feedback and suggestions through <b>answering the survey in the app</b>, however do note that <b>this survey can only be taken once in this version.</b> You may also email your suggestions to <b>plumatika.ming@gmail.com</b>.</p>
+      </div>
+    </div>
+  </section>
+
+  <br><br>
+  <footer>
+    <p>&copy; 2025 Plumatika. All rights reserved.</p>
+  </footer>
+
+  <!-- imported icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
