@@ -103,6 +103,7 @@ ul {
   transition: filter 0.3s ease;
   -webkit-tap-highlight-color: transparent;
   user-select: none;
+  display: none;
 }
 
 /* no to purple!!!!! */
@@ -172,30 +173,21 @@ ul {
 
 .banner {
   width: 100%;
-  height: auto;
   overflow: hidden;
 }
 
-.banner-slide {
-  flex-shrink: 0;
+.banner-wrapper {
+  position: relative;
   width: 100%;
   height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.banner-slide img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  object-position: center;
+.banner-image img {
   display: block;
-}
-
-.slideshow {
-  display: flex;
-  transition: transform 0.8s ease-in-out;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 footer {
@@ -467,6 +459,10 @@ footer {
     display: none !important;
   }
 
+  .menu {
+    display: flex;
+  }
+
   .mobile-menu {
     font-size: 1.25rem;  
     position: fixed;
@@ -514,6 +510,10 @@ footer {
   .download-btn {
     padding: 0.9rem 1.2rem;
     font-size: 0.95rem;
+  }
+
+  .banner-image img {
+    object-fit: contain;
   }
 
   .east-side,
@@ -566,5 +566,3 @@ footer {
   }
 
 }
-
-
