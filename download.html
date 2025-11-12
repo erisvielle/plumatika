@@ -4,45 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plumatika</title>
-    <link rel="icon" href="icon/icon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/icon/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <nav class="navbar">
     <div class="pluma">
       <a href="/" class="navbar-logo">
-        <img src="icon/icon.png" alt="logo" style="height:50px;">
+        <img src="/icon/icon.png" alt="logo" style="height:50px;">
       </a>
       <h1>Plumatika</h1>
     </div>
     <div class="nav-links">
-      <a href="download.html" class="button-gs">Download</a>
-      <a href="faq.html" class="button-gs">FAQs</a>
-      <a href="raffle.html" class="button-gs">Join Raffle</a>
+      <a href="/download/" class="button-gs">Download</a>
+      <a href="/faq/" class="button-gs">FAQs</a>
       <button class="menu" onclick="toggleMenu()">
-        <img src="icon/menu.png" alt="menu" style="height:30px;">
+        <img src="/icon/menu.png" alt="menu" style="height:30px;">
       </button>
-    </div>
-    <div class="dropdown" id="navmenu">
-      <a href="dashboard.html"><ion-icon name="log-in" class="admincon"></ion-icon><span> Dashboard</span></a>
     </div>
     <div class="mobile-menu" id="sidemenu">
       <button class="close-btn" onclick="toggleMenu()"><ion-icon name="arrow-forward-outline"></ion-icon></button>
-      <a href="download.html"><ion-icon name="download-outline" class="downloadcon"></ion-icon> Download App</a>
-      <a href="faq.html"><ion-icon name="help-circle-outline" class="faqcon"></ion-icon> FAQs</a>
-      <a href="raffle.html"><ion-icon name="dice-outline" class="rafflecon"></ion-icon> Join Raffle</a>
-      <a href="dashboard.html"><ion-icon name="log-in" class="admincon"></ion-icon> Dashboard</a>
+      <a href="/"><ion-icon name="home-outline"></ion-icon>  Back to Home</a>
+      <a href="/faq/"><ion-icon name="help-circle-outline" class="faqcon"></ion-icon> FAQs</a>
     </div>
   </nav>
 
   <br><br><br><br><br>
   <section class="features">
   <div class="east-side animate-on-scroll">
-    <img src="icon/logo.png" alt="logo" class="feature-gif">
+    <img src="/icon/logo.png" alt="logo" class="feature-gif">
     <div class="nothingburger">
       <h1>Write the past, shape the future.<br>
         Scribble your way to ace Baybayin!</h1><br>
-      <button class="download-btn" onclick="window.location.href='https://drive.google.com/uc?export=download&id=169YigZZRNfJvUwOBL8H1azHiWKztR1Yd'">Download the Plumatika App</button>
+      <button class="download-btn" onclick="window.location.href='https://drive.google.com/file/d/1vF1mSm2p2hp1jGSHLbJjBXypKW2fhlWI/view'">Download the Plumatika App</button>
     </div>
   </div>
   </section>
@@ -114,6 +108,20 @@
             </li>
       </div>
     </div>
+    <div class="faq-item">
+      <button class="faq-question">Plumatika 0.3.1</button>
+      <div class="faq-answer">
+        <h3>Release Date</h3>
+        <p>November 2, 2025</p>
+        <h3>Minor Fixes & Improvements</h3>
+        <p>This patch focuses on resolving survey-related display bugs both in user and admin view and improving the clarity of the lessons list screen.</p>
+        <ul>
+            <li>Fixed an issue where the selected year level in the survey would not display properly.</li>
+            <li>Fixed an issue where the survey type dropdown in Manage Survey was not appearing.</li>
+            <li>Removed “Chapter 2 Coming Soon” button to clean up the interface.</li>
+        </ul>
+      </div>
+    </div>
    </section>
 
    <br><br>
@@ -126,12 +134,7 @@
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-  <script src="script.js"></script>
+  <script src="/script.js"></script>
 </body>
 
 </html>
-
-
-
-
-
