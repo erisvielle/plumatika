@@ -13,27 +13,7 @@ function adjustBanner() {
   }
 }
 
-// for slideshow
-window.addEventListener("load", () => {
-  adjustBanner();
-
-  let currentIndex = 0;
-  const slideshow = document.querySelector(".slideshow");
-  const slides = document.querySelectorAll(".banner-slide");
-  const totalSlides = slides.length;
-
-  function showSlides() {
-    currentIndex = (currentIndex + 1) % totalSlides;
-    slideshow.style.transition = "transform 0.8s ease-in-out";
-    slideshow.style.transform = `translateX(-${currentIndex * 100}%)`;
-    setTimeout(showSlides, 8000);
-  }
-
-  if (totalSlides > 0) {
-    setTimeout(showSlides, 8000);
-  }
-});
-
+// for responsive pic
 window.addEventListener("load", adjustBanner);
 window.addEventListener("resize", adjustBanner);
 
